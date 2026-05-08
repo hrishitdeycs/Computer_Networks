@@ -89,3 +89,61 @@ In Cisco Packet Tracer, we use a **tree topology** when we need a **hierarchical
 ### **In short**
 
 We use tree topology in Packet Tracer when we need a **large, structured, and expandable network with layered control and multiple connected LANs**.
+
+# Mesh topology
+<img width="822" height="619" alt="image" src="https://github.com/user-attachments/assets/747ff24a-eadd-4e47-8759-9e177b468c09" />
+<img width="940" height="799" alt="image" src="https://github.com/user-attachments/assets/82846b6b-f358-4cda-ac7c-5c009ccc4608" />
+<img width="747" height="558" alt="image" src="https://github.com/user-attachments/assets/e25fda33-0b6c-45f2-afe3-56d59ee8a647" />
+
+We use **mesh topology** in Cisco Packet Tracer when we want to simulate a network where devices are **highly reliable, redundant, and fault-tolerant**.
+
+### **Why mesh topology?**
+
+* **High reliability**: multiple paths between devices
+* **No single point of failure**
+* **Better load balancing**
+* **Improved network availability**
+
+### **When to use it?**
+
+* In **critical networks** (banks, military, ISPs)
+* When **continuous uptime is required**
+* For studying or simulating **redundancy and routing concepts**
+* In Packet Tracer labs to practice **complex routing (e.g., OSPF, EIGRP behavior in redundant paths)**
+
+### **Key drawback (important in real life & labs)**
+
+* Becomes **complex and expensive quickly** as devices increase
+
+In short: use mesh topology in Packet Tracer when you want to model or test **redundant, fault-tolerant networks with multiple paths between nodes**.
+
+# Hybrid topology
+<img width="940" height="282" alt="image" src="https://github.com/user-attachments/assets/1e07a5b8-35a8-4541-aa5c-18e6de214623" />
+<img width="940" height="776" alt="image" src="https://github.com/user-attachments/assets/1c876ec2-f99c-4984-bb8d-80f0bc216fd7" />
+<img width="838" height="581" alt="image" src="https://github.com/user-attachments/assets/89e4ef37-7d6c-4e07-bba6-7804bda12978" />
+
+We use a **hybrid topology** in Cisco Packet Tracer when we combine two or more basic network topologies (like star, bus, ring, mesh) into one network design.
+
+### **Why we use hybrid topology**
+
+* To **combine advantages** of different topologies (e.g., reliability of mesh + simplicity of star)
+* To **improve scalability** for large networks
+* To **increase fault tolerance** (failure in one part doesn’t affect the whole network)
+* To **optimize performance** for different departments or segments
+
+### **When we use it**
+
+* In **large or enterprise networks** (schools, companies, campuses)
+* When different network segments need **different structures**
+* When we need **flexibility in design** and expansion
+* In Cisco Packet Tracer labs when simulating **real-world complex networks**
+
+### **Simple example**
+
+A company may use:
+
+* Star topology in each department
+* Ring or mesh between departments
+  → Together forming a **hybrid topology**
+
+In short: **Hybrid topology is used when a single topology is not enough for performance, scalability, and reliability needs.**
