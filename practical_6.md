@@ -76,3 +76,22 @@ The router becomes secured with:
 
 <img width="580" height="884" alt="image" src="https://github.com/user-attachments/assets/2c894716-4945-4880-b1c3-ea9f0344458a" />
 
+We perform **initial router configuration in Cisco Packet Tracer** to prepare the router for basic network operation and management.
+
+### Why it is done:
+
+* To **give the router a unique identity** (hostname)
+* To **secure access** (enable passwords, SSH/telnet setup)
+* To **prevent unauthorized access**
+* To **enable interfaces for communication**
+* To **set basic network parameters** so routing works properly
+
+### When it is done:
+
+* **Immediately after adding a new router** in a network
+* **Before connecting it to other devices or networks**
+* During the **first-time setup in labs or real deployments**
+* Before configuring advanced features like routing protocols (OSPF, RIP, etc.)
+
+In short: it’s the **first step after placing a router**, to make it usable, secure, and ready for configuration.
+
