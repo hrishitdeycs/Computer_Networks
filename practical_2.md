@@ -13,6 +13,26 @@ Click PC1 → FastEthernet0
 <img width="940" height="401" alt="image" src="https://github.com/user-attachments/assets/b7bdfb84-e312-497e-a937-a21e7bbeff7a" />
 <img width="940" height="802" alt="image" src="https://github.com/user-attachments/assets/d32b7a3b-eff6-4017-850a-f819ba85cb45" />
 <img width="940" height="781" alt="image" src="https://github.com/user-attachments/assets/e82dc772-e9f1-42c7-81fa-0f8e322d9b08" />
+In Cisco Packet Tracer, a **PC-to-PC connection** is done to simulate direct communication between two computers without intermediate devices like switches or routers.
+
+### Why we do it
+
+* To test basic network connectivity
+* To practice IP addressing and subnetting
+* To learn how devices communicate directly
+* To troubleshoot network settings (ping, protocols, cables)
+
+### When we do it
+
+* In small lab experiments or beginner networking practice
+* When demonstrating peer-to-peer networking
+* During testing before adding switches/routers
+* For file sharing or direct communication scenarios
+
+### Important
+
+Traditionally, direct PC-to-PC uses a **copper crossover cable** because both are same-type devices.
+In newer versions of Packet Tracer and modern devices, **auto-MDIX** allows even straight-through cables to work sometimes.
 
  
  
