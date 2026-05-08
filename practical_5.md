@@ -93,6 +93,36 @@ It shows the **running (active) config**, not the saved startup config (which is
 
 <img width="548" height="536" alt="image" src="https://github.com/user-attachments/assets/eddd8ce9-8813-4b27-ade0-bbc0349dfc5b" />
 
+In Cisco Packet Tracer, when you configure those two commands in global configuration mode, they do different things:
+
+### 1. `banner motd $***Only Authorized users allowed***$`
+
+* Sets a **Message of the Day (MOTD) banner**.
+* This message is displayed **immediately when someone connects to the switch (console, SSH, Telnet)**, before login.
+* Purpose: **Security warning / legal notice / access restriction message**.
+* The `$` is just the delimiter defining the start and end of the message (you could use other symbols like `#`, `@`, etc.).
+
+ Result: Anyone accessing the device sees:
+**Only Authorized users allowed**
+
+---
+
+### 2. `service password-encryption`
+
+* Encrypts all **plain-text passwords** stored in the configuration file (e.g., console, VTY, enable passwords).
+* Uses a **weak Type 7 encryption** (not secure for real security, but hides passwords from casual viewing).
+* Purpose: Prevents passwords from being visible in plain text in `show running-config`.
+
+ Result: Passwords appear scrambled instead of readable.
+
+---
+
+### In short:
+
+* **banner motd** → Shows a warning message before login.
+* **service password-encryption** → Hides stored passwords in configuration output (basic obfuscation).
+
+
 ### Why we perform initial switch configuration
 
 We do it to make a Cisco switch usable, secure, and manageable instead of leaving it in default (unsecured) state. By default, a switch has no password protection, no hostname, and no remote management setup.
