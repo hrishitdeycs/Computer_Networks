@@ -12,7 +12,7 @@ In Cisco Packet Tracer, these commands perform an **initial router configuration
 service password-encryption → Encrypts all plain-text passwords in running config (Type 7 weak encryption).
 
 
-5. **`password cse123`**
+5. **`enable password cse123`**
    Sets a **generic line password**, but on its own it is not applied unless tied to a line (often ignored unless used with specific line config).
 
 6. **`enable secret cse12345`**
