@@ -2,6 +2,8 @@ Here is what happens **line by line in Cisco Packet Tracer (initial switch confi
 
 * **enable** → Moves from user EXEC mode to privileged EXEC mode (`Switch#`).
 * **configure terminal** → Enters global configuration mode (`Switch(config)#`).
+* **`hostname cseswitch`**
+  Sets the switch’s **device name** to `cseswitch`, which replaces the default name (e.g., `Switch`) in the CLI prompt.
 * **service password-encryption** → Encrypts all plain-text passwords in running config (Type 7 weak encryption).
 * **enable password cse123** → Sets a fallback privileged mode password (but will be ignored if enable secret is present).
 * **enable secret cse12345** → Sets the main encrypted password for privileged EXEC mode (this overrides `enable password`).
