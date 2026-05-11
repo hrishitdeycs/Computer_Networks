@@ -5,11 +5,12 @@ In Cisco Packet Tracer, these commands perform an **initial router configuration
 
 2. **`configure terminal`**
    Enters global configuration mode (`Router(config)#`).
+
+3. **`hostname cserouter`**
+   Changes router name to **cserouter** (prompt becomes `cserouter(config)#`).
    
 service password-encryption → Encrypts all plain-text passwords in running config (Type 7 weak encryption).
 
-4. **`hostname cserouter`**
-   Changes router name to **cserouter** (prompt becomes `cserouter(config)#`).
 
 5. **`password cse123`**
    Sets a **generic line password**, but on its own it is not applied unless tied to a line (often ignored unless used with specific line config).
