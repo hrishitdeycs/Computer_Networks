@@ -5,39 +5,41 @@ In Cisco Packet Tracer, these commands perform an **initial router configuration
 
 2. **`configure terminal`**
    Enters global configuration mode (`Router(config)#`).
+   
+service password-encryption → Encrypts all plain-text passwords in running config (Type 7 weak encryption).
 
-3. **`hostname cserouter`**
+4. **`hostname cserouter`**
    Changes router name to **cserouter** (prompt becomes `cserouter(config)#`).
 
-4. **`password cse123`**
+5. **`password cse123`**
    Sets a **generic line password**, but on its own it is not applied unless tied to a line (often ignored unless used with specific line config).
 
-5. **`enable secret cse12345`**
+6. **`enable secret cse12345`**
    Sets encrypted password for privileged EXEC mode (overrides enable password if both exist).
 
-6. **`line console 0`**
+**`banner motd $Authorized access only$`**
+    Displays warning message before login.
+
+7. **`line console 0`**
    Enters console line configuration mode.
 
-7. **`password csexyz`**
+8. **`password csexyz`**
    Sets password for console access.
 
-8. **`login`**
+9. **`login`**
    Enforces password authentication on console login.
 
-9. **`exit`**
+10. **`exit`**
    Returns to global configuration mode.
 
-10. **`line vty 0 4`**
+11. **`line vty 0 4`**
     Enters VTY (remote access: Telnet/SSH) configuration for 5 lines.
 
-11. **`password csepqr`**
+12. **`password csepqr`**
     Sets password for remote access sessions.
 
-12. **`login`**
+13. **`login`**
     Requires password for remote login.
-
-13. **`banner motd $Authorized access only$`**
-    Displays warning message before login.
 
 14. **`exit`**
     Returns to global configuration mode.
