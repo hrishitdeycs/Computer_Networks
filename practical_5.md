@@ -1,3 +1,27 @@
+Here is what happens **line by line in Cisco Packet Tracer (initial switch configuration)**:
+
+* **enable** → Moves from user EXEC mode to privileged EXEC mode (`Switch#`).
+* **configure terminal** → Enters global configuration mode (`Switch(config)#`).
+* **service password-encryption** → Encrypts all plain-text passwords in running config (Type 7 weak encryption).
+* **enable password cse123** → Sets a fallback privileged mode password (but will be ignored if enable secret is present).
+* **enable secret cse12345** → Sets the main encrypted password for privileged EXEC mode (this overrides `enable password`).
+* **banner motd # Unauthorized access prohibited #** → Displays warning message to anyone accessing the device.
+* **line console 0** → Enters console line configuration mode.
+
+  * **password csexyz** → Sets console login password.
+  * **login** → Forces users to enter the console password.
+* **exit** → Returns to global configuration mode.
+* **line vty 0 15** → Enters VTY (remote Telnet/SSH) line configuration mode.
+
+  * **password csepqr** → Sets password for remote access.
+  * **login** → Requires password for VTY access.
+* **exit** → Returns to global configuration mode.
+* **exit** → Leaves configuration mode and returns to privileged EXEC mode.
+* **show running-config** → Displays the current active configuration (you will see encrypted passwords and all applied settings).
+
+**Overall result:**
+The switch becomes secured with encrypted passwords, console and remote access protection, an MOTD warning banner, and a protected enable (privileged) mode using `cse12345` as the effective password.
+
 In Cisco Packet Tracer (IOS), these commands set up basic switch configuration in sequence:
 
 * **`enable`**
