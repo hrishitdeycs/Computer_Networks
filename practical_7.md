@@ -1,5 +1,7 @@
 <img width="940" height="473" alt="image" src="https://github.com/user-attachments/assets/439e9bdf-d64a-484e-8407-f6127e54cd71" />
 
+<img width="690" height="556" alt="image" src="https://github.com/user-attachments/assets/423a5d27-67f0-472e-b2e8-9a84a66cff82" />
+
 <img width="940" height="337" alt="image" src="https://github.com/user-attachments/assets/eb33138d-eb3f-4fce-9965-17a9c266d023" />
 
 We implement a **Client–Server network** in Cisco Packet Tracer to simulate how real-world services work over a network.
